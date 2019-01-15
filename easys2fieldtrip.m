@@ -20,7 +20,7 @@ function [ dataFieldtrip ] = easys2fieldtrip( fullPath, standardHeader, extended
 dataFieldtrip = struct;
 dataFieldtrip.fsample = standardHeader.fsamp;
 dataFieldtrip.label = cellstr(extendedHeader.CN);
-dataFieldtrip.time = mat2cell(0:(1/dataFieldtrip.fsample):((standardHeader.nsamp-1)/dataFieldtrip.fsample),1,size(data,1));
+dataFieldtrip.time = mat2cell(0:(1/dataFieldtrip.fsample):((standardHeader.nsamp-1)/dataFieldtrip.fsample),1,size(data,2));
 
 % Events
 dataFieldtrip.event = struct;

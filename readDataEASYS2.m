@@ -88,6 +88,6 @@ function [ dataCalib,rawData ] = readDataEASYS2( filePath, standardHeader, exten
         dataCalib = dataCalib(vChannels,:);
     end
     
-    
+    fclose(filePath);
 end
 

@@ -294,5 +294,6 @@ if extendedHeader.TT.list_len ~= 0 %isfield(extendedHeader,'TT')
     
 end
 
+fclose(filePath)
 end
 

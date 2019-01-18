@@ -62,6 +62,6 @@ function [ standardHeader ] = readSHeaderEASYS2( filePath )
     standardHeader.d_val.data_modified_flag     = bitget(dValHelp,3);
     standardHeader.d_val.data_cell_size         = bi2de(bitget(dValHelp,1:2));
     
-    fclose(filePath);
+    fclose(fid);
 end
 

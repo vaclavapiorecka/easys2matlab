@@ -259,6 +259,22 @@ if extendedHeader.TT.list_len ~= 0 %isfield(extendedHeader,'TT')
         
         j = j+1;
     end
+    
+    positionZ       = find( [TAGTable.class] == 128);
+    begSample       = [ 1, positionZ ]';
+    endSample       = [ positionZ, size(TAGTable,2)]';
+    wholePosition   = [ begSample, endSample ];
+    numOfSeg        = size(wholePosition,1);
+    
+    if (numOfSeg > 1)
+        for i = 2 : 1 : numOfSeg
+            newvec = [TAGTable(wholePosition(i,1)+1 : wholePosition(i,2)).pos]'+2^24;
+            for j = 1 : 1 : size(newvec,1)
+                [ TAGTable(wholePosition(i,1)+j).pos ] = newvec(j,1);
+            end
+        end
+    end
+    
     extendedHeader.TAG = TAGTable;
     
     %% Tag Definitions
@@ -294,5 +310,6 @@ if extendedHeader.TT.list_len ~= 0 %isfield(extendedHeader,'TT')
     
 end
 
+fclose(fid)
 end
 

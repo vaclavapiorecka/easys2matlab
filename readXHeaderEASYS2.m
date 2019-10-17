@@ -72,6 +72,7 @@ function [ extendedHeader ] = readXHeaderEASYS2( filePath,standardHeader )
 % AUTHOR:   Vaclava Piorecka
 % CONTACT:  vaclava.piorecka@fbmi.cvut.cz, vaclava.piorecka@nudz.cz
 % DATE:     2018/08/01
+%           2019/07     - update the event table for longterm EEG recordings
 
 fid = fopen(filePath,'r');
 fseek(fid,standardHeader.xhdr_org,'bof');

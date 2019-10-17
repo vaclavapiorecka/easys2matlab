@@ -1,17 +1,17 @@
 function [ dataCalib,rawData ] = readDataEASYS2( filePath, standardHeader, extendedHeader, vChannels, beginSample, endSample )
-% READDATAEASYS2 Read the standard header of EASYS2 files (*.d).
+% READDATAEASYS2 Read the raw EEG data of EASYS2 files (*.d).
 % This set of functions was created based on the reference manual to the
 % EASYS2 file format: EASYS2 Reference Manual. 3rd edition. Praha: Neuroscience Technology Research, 2002.
 % 
 % INPUTS:
-%   filePath - whole path of the file
-%   standardHeader - standard header of the file
-%   extendedHeader - extended header of the file
-%   vChannels - optional parameter, row vector of position of concrete electrodes from extendedHeader.CN
+%   filePath        - whole path of the file
+%   standardHeader  - standard header of the file
+%   extendedHeader  - extended header of the file
+%   vChannels       - optional parameter, row vector of position of concrete electrodes from extendedHeader.CN
 %       - If this parameter is not set, function use all of the channels.
-%   beginSample - optional parameter, begin sample of the data
+%   beginSample     - optional parameter, begin sample of the data
 %       - If this parameter is not set, function set this parametr to 1.
-%   endSample - optional parameter, begin sample of the data
+%   endSample       - optional parameter, begin sample of the data
 %       - If this parameter is not set, function set this parametr to standardHeader.nsamp.
 %   
 % OUTPUTS:

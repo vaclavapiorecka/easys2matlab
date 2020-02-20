@@ -9,6 +9,8 @@ AUTHOR:   Ing. Vaclava Piorecka, Ph.D.
 
 CONTACT:  vaclava.piorecka@nudz.cz, vaclava.piorecka@fbmi.cvut.cz
 
+This toolbox is the result of research activities supported by project number LO1611 with the financial support of the Ministry of Education, Youth and Sports within the NPU I program.
+
 ## List of scripts & functions
 readSHeaderEASYS2   - reads the standard header of EASYS2 files
 

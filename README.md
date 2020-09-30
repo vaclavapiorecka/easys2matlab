@@ -9,6 +9,8 @@ AUTHOR:   Ing. Vaclava Piorecka, Ph.D.
 
 CONTACT:  vaclava.piorecka@nudz.cz, vaclava.piorecka@fbmi.cvut.cz
 
+[![DOI](https://zenodo.org/badge/154281824.svg)](https://zenodo.org/badge/latestdoi/154281824)
+
 This toolbox is the result of research activities supported by project number LO1611 with the financial support of the Ministry of Education, Youth and Sports within the NPU I program.
 
 ## List of scripts & functions
